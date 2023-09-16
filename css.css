@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "asdf";
+    src: url(coolvetica\ rg.otf);
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+}
+#sname {
+    margin-top: 45px;
+    margin-left: 0%;
+    position: left;
+    margin-bottom: 100px;
+    color: rgba(8, 8, 8, 0.7);
+    font-family: "asdf";
+}
+
+#sname a {
+    font-weight: bold;
+    font-size: 180%;
+    transition: all 500ms;
+    font-family: "asdf";
+    padding-left: 4%;
+    color: white;
+    position: left;
+}
+    
+#sname a:hover {
+    font-size: 40px;
+    font-size-adjust: 20px;
+}
+#name {
+    font-family: "asdf";
+    position: relative;
+    right: 40px;
+
+}
+  .playful {
+    
+    font-family: "asdf";
+    color:#313131;
+    font: size 600%;;
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: rgb(250, 2, 167);
+    }
+    
+    50% {
+      
+      color: #5d345e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #29b959;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+}
+body {
+  height: 100vh;
+   background: linear-gradient(90deg,#09203f,#537895);
+
+}
+
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 65%;
+  top: 20%;
+  width: 500px;
+  height: 500px;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
